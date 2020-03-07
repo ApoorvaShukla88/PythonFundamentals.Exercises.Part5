@@ -5,4 +5,12 @@ def is_palindrome(value: str) -> bool:
     :param value: A string
     :return: A boolean
     """
-    pass  # remove pass statement and implement me
+    temp_str = value.replace(" ", "").lower()
+    if (temp_str == temp_str[:: - 1]):
+       return True
+    else:
+       return False
+
+
+    # remove pass statement and implement me
+print(is_palindrome("Do geese see God"))
